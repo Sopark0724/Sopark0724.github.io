@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "index page"
+title:      "index page2"
 subtitle:   ""
 date:       2018-08-07 12:00:00
 author:     "sopark2"
