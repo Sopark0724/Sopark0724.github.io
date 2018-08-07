@@ -1,15 +1,13 @@
 ---
 layout:     post
-title:      "index page2"
-subtitle:   ""
-date:       2018-08-07 12:00:00
-author:     "sopark2"
-header-img: ""
+title:      "Hello 2015"
+subtitle:   "Hello World, Hello Blog"
+date:       2015-01-29 12:00:00
+author:     "Hux"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Life
 ---
 
-# Index Page2
 
-내용 테스트2
-=========
-
-테스트트트트2
+테스트트트
