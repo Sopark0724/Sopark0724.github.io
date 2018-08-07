@@ -50,7 +50,7 @@ public class ApplicationConfig {
 
     private String removeServerUrl = "http://remote.server.com";
 
-    @SignalExecute(signalName = "SIGUSR1")
+    @SignalExecute(signalName = "USR2")
     public void changeUrl() {
         this.removeServerUrl = "http://remote2.server.com";
     }
