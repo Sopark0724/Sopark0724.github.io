@@ -95,10 +95,16 @@ layout: default
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+		    
+		    </script>
 
-<div class="fb-comments" data-href="https://sopark0724.github.io/2018/04/02/you-are-slaves/" data-numposts="5"></div>
-
+<div class="fb-comments" data-href="" data-numposts="5"></div>
+<script>
+    $(".fb-comments").attr("data-href", window.location.href);
+</script>
+		    
+		    
 <div id="fb-root"></div>
 
                 {% if site.disqus_username %}
