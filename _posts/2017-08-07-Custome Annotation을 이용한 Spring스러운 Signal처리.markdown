@@ -152,6 +152,18 @@ public class SignalHandler implements sun.misc.SignalHandler, ApplicationListene
 
 ```
 
+이제 아래와 같이 SIGUSR2를 해당 프로세스 PID로 전달시키면, 아래의 changeUrl 함수가 호출되는 것을 볼 수 있다.
+
+kill -SIGUSR2 29419
+
+```java
+    @SignalExecute(signalName = "USR2")
+    public void changeUrl() {
+        this.removeServerUrl = "http://remote2.server.com";
+    }
+```
+
+
 ### 이런 식의 Annotation을 이용한 코딩은 생각보다 훨씬 더 유용하다. 중복코드를 제거하고, 필요한 기능들을 빠르게 추가 하는데 많은 도움이 된다.
 ### 다음 포스팅부터는 Annotation 을 이용한 코드들의 원리와, 더 다양한 활용방법을 소개 하고자 한다.
 
