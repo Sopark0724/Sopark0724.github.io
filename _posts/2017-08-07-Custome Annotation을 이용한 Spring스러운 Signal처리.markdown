@@ -48,11 +48,11 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class ApplicationConfig {
 
-    private String removeServerUrl = "http://remote.server.com";
+    private String remoteServerUrl = "http://remote.server.com";
 
     @SignalExecute(signalName = "USR2")
     public void changeUrl() {
-        this.removeServerUrl = "http://remote2.server.com";
+        this.remoteServerUrl = "http://remote2.server.com";
     }
 
 }
